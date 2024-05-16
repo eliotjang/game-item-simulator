@@ -1,0 +1,21 @@
+{
+  "name": "game-item-simulator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/eliotjang/game-item-simulator.git",
+  "author": "Eliot Jang <eliotjang2@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write *.js **/*.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.1",
+    "mongoose": "^8.3.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
