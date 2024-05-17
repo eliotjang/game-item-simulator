@@ -14,7 +14,7 @@ connect();
 app.use(express.json());
 
 // static Middleware, express.static()을 사용하여 정적 파일 제공
-app.use(express.static('./assets'));
+app.use('/', express.static('./assets'));
 
 app.use('/api', [CharactersRouter, ItemsRouter, EquipmentRouter]);
 
