@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('./assets'));
 
 app.get('/', (req, res) => {
-  res.send('게임 아이템 시뮬레이션입니다.');
+  res.send('API Index Page');
 });
 
 app.use('/api', [CharactersRouter, ItemsRouter, EquipmentRouter]);
