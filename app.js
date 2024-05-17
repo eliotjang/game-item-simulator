@@ -18,6 +18,10 @@ app.use(express.urlencoded({ extended: true }));
 // static middleware
 app.use(express.static('./assets'));
 
+app.get('/', (req, res) => {
+  res.send('게임 아이템 시뮬레이션입니다.');
+});
+
 app.use('/api', [CharactersRouter, ItemsRouter, EquipmentRouter]);
 
 // error handling
