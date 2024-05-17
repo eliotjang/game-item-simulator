@@ -10,11 +10,13 @@ const PORT = 3000;
 
 connect();
 
-// body parser Middleware
+// body parser middleware
 app.use(express.json());
+// content-type이 form인 경우에 body data를 가져올 수 있도록 구현
+app.use(express.urlencoded({ extended: true }));
 
-// static Middleware, express.static()을 사용하여 정적 파일 제공
-app.use('/', express.static('./assets'));
+// static middleware
+app.use(express.static('./assets'));
 
 app.use('/api', [CharactersRouter, ItemsRouter, EquipmentRouter]);
 
