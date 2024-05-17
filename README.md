@@ -9,7 +9,7 @@
 
 - 기능 : 캐릭터 생성
 - Method : POST
-- API URL : /api/chracters
+- API URL : /api/characters
 - request body :
   ```json
   {
